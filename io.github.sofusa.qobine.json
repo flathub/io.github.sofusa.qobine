@@ -42,8 +42,8 @@
         {
           "type": "git",
           "url": "https://github.com/sofusa/qobine.git",
-          "tag": "v0.10.3-fix-3",
-          "commit": "0db02add7d1b60e9b0393b744f4735fd43d2b899"
+          "tag": "v0.10.3-fix-5",
+          "commit": "68d62dc0c90ff11f72c9a60989e6ce6e60c4f7ad"
         },
         "cargo-sources.json"
       ]
