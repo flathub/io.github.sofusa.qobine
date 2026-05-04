@@ -18,7 +18,7 @@
 
   "modules": [
     {
-      "name": "qobuz-player-gtk",
+      "name": "qobine",
       "buildsystem": "simple",
 
       "build-options": {
