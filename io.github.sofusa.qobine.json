@@ -4,7 +4,7 @@
   "runtime-version": "50",
   "sdk": "org.gnome.Sdk",
   "sdk-extensions": ["org.freedesktop.Sdk.Extension.rust-stable"],
-  "command": "qobuz-player-gtk",
+  "command": "gtk-module",
 
   "finish-args": [
     "--share=network",
@@ -18,21 +18,21 @@
 
   "modules": [
     {
-      "name": "qobuz-player-gtk",
+      "name": "gtk-module",
       "buildsystem": "simple",
 
       "build-options": {
         "append-path": "/usr/lib/sdk/rust-stable/bin",
 
         "env": {
-          "CARGO_HOME": "/run/build/qobuz-player-gtk/cargo"
+          "CARGO_HOME": "/run/build/gtk-module/cargo"
         }
       },
 
       "build-commands": [
-        "cargo build --offline --locked --release --manifest-path qobuz-player-gtk/Cargo.toml",
+        "cargo build --offline --locked --release --manifest-path gtk-module/Cargo.toml",
 
-        "install -Dm755 ./target/release/qobuz-player-gtk /app/bin/qobuz-player-gtk",
+        "install -Dm755 ./target/release/gtk-module /app/bin/gtk-module",
         "install -Dm644 flatpak/icon.svg /app/share/icons/hicolor/scalable/apps/io.github.sofusa.qobine.svg",
         "install -Dm644 flatpak/io.github.sofusa.qobine.desktop /app/share/applications/io.github.sofusa.qobine.desktop",
         "install -Dm644 flatpak/io.github.sofusa.qobine.metainfo.xml /app/share/metainfo/io.github.sofusa.qobine.metainfo.xml"
@@ -42,7 +42,7 @@
         {
           "type": "git",
           "url": "https://github.com/sofusa/qobine.git",
-          "commit": "16189a4adb2cfa5fb684def56dbed33f7052a6cb"
+          "commit": "20c2053bc46a419e7163431f8013cefed52ab188"
         },
         "cargo-sources.json"
       ]
