@@ -42,7 +42,7 @@
         {
           "type": "git",
           "url": "https://github.com/sofusa/qobine.git",
-          "commit": "21590d32b73e3f523bcd3ec2142b49595fd9f65a"
+          "commit": "f024c8dd26cdaa01f3dd1025feb12912406eca2e"
         },
         "cargo-sources.json"
       ]
