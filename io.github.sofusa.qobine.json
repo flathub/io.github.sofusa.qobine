@@ -1,7 +1,7 @@
 {
   "app-id": "io.github.sofusa.qobine",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "51",
+  "runtime-version": "50",
   "sdk": "org.gnome.Sdk",
   "sdk-extensions": ["org.freedesktop.Sdk.Extension.rust-stable"],
   "command": "qobine-gtk",
@@ -42,7 +42,7 @@
         {
           "type": "git",
           "url": "https://github.com/sofusa/qobine.git",
-          "commit": "f024c8dd26cdaa01f3dd1025feb12912406eca2e"
+          "commit": "5c4e8c209ce5e9581be818e7e0c98a797d5f75e9"
         },
         "cargo-sources.json"
       ]
